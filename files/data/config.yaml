@@ -1,0 +1,13 @@
+language: Python
+version: 3.8
+data_types:
+  - int
+  - float
+  - str
+  - bool
+  - list
+  - dict
+  - set
+  
+docs: https://docs.python.org/3.8/
+
