@@ -70,14 +70,29 @@ con = mysql.connector.connect(
     database="dbtest"
 )
 cursor = con.cursor()
+print('Citim informatiile din baza de date inainte de inserare')
 cursor.execute("SELECT * FROM produse")
 results = cursor.fetchall()
 print(results)
-cursor.execute("""INSERT INTO produse(nume, pret) VALUES('cirese', 12)""")
+fruct = 'smochine'
+pret = 27
+dict = {
+    'visine': 7,
+    'piersici': 20,
+    'prune': 5
+}
+# cursor.execute("""INSERT INTO produse(nume, pret) VALUES('cirese', 12)""")
+cursor.execute(
+    """INSERT INTO produse(nume, pret) VALUES(%s, %s)""", (fruct, pret))
+for fruct, pret in dict.items():
+    cursor.execute(
+        """INSERT INTO produse(nume, pret) VALUES(%s, %s)""", (fruct, pret))
+con.commit()
+print('Liniile din tabela dupa inserare linie noua')
 cursor.execute("SELECT * FROM produse")
 results = cursor.fetchall()
 # print(results)
 for row in results:
     print(row)
-
+con.commit()
 con.close()
