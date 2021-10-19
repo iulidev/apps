@@ -2,3 +2,4 @@ files/data/*.jpg
 pip/mediu
 pip/mediu2 
 *.db
+web_frameworks/env_flask_app

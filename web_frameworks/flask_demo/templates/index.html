@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Home page</h1>
+<h3><b>O aplicatie web simpla</b> in Flask 2.0</h3>
+<p> Demonstratie web application</p>
+<p> Web frameworks in Python</p>
+<ol>
+    {% for framework in entries %}
+    <li> {{ framework }}</li>
+    {% endfor %}
+</ol>
+</body>
+{%endblock %}}
