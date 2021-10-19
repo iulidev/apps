@@ -1,0 +1,11 @@
+{% extends "base.html"%}
+{% block title %}<h1> {{title}}</h2>{%endblock%}
+
+{% block content %}
+<h2>Numerele extrase</h2>
+<ul>
+    {% for numar in numere %}
+    <li>{{numar}}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
