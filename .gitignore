@@ -3,3 +3,5 @@ pip/mediu
 pip/mediu2 
 *.db
 web_frameworks/env_flask_app
+web_frameworks/env_django
+

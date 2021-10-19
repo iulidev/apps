@@ -3,6 +3,9 @@ Flask   - micro web framework (light-weight web application framework)
         - o colectie de librarii cu foarte putine dependente si nu necesita
         un setup foarte complex pentru a dezvolta aplicatii web
 
+Documentatie oficiala Flask:
+https://flask.palletsprojects.com/en/2.0.x/
+
         Recomandare creare virtual environment inainte de instalare flask:
         Crearea de aplicatii web sa se realizeze intr-un mediu izolat, un
         virtual environment
